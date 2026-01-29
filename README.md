@@ -22,16 +22,23 @@ echo "✅ 安装完成！请在 OpenCode 中输入 /lijigang 测试。"
 
 ---
 
-## 🛠 使用方法
+## 🛠 使用方法 (Usage)
 
-安装完成后，在 OpenCode 对话框中输入：
+### 方式一：Slash Command（推荐）
+在 OpenCode 对话框中，直接输入指令 + 内容：
 
-> `/lijigang [你的需求]`
+> `/lijigang [粘贴你想分析的文章、代码或问题]`
 
 **示例**：
 *   `/lijigang 分析一下拼多多的商业模式`
 *   `/lijigang 什么是量子纠缠？`
-*   `/lijigang 把这段话改得更有哲理一点`
+*   `/lijigang 把这段话改得更有哲理一点：[粘贴文本]`
+
+### 方式二：自然语言
+你也可以直接说：
+> “用李继刚的模式帮我分析一下这个：[粘贴内容]”
+
+---
 
 ## 📦 包含的思维模型 (30+)
 
@@ -62,6 +69,17 @@ echo "✅ 安装完成！请在 OpenCode 中输入 /lijigang 测试。"
 *   **Life Mentor**: 历史名人沉浸式对话
 *   **Verbal Combat**: 高情商/犀利回击
 *   **Venomous Observer**: 毒舌评论家
+
+---
+
+## 🔧 原理解析
+
+这个 Skill 本质上是一个 **Router (路由)**。
+
+1.  **Input**: 接收用户的 `/lijigang` 指令。
+2.  **Check**: 判断信息量。如果信息不足，允许有限度联网搜索获取 Fact。
+3.  **Route**: 根据内容意图，从本地 `~/lijigang_skills/*.md` 中读取最匹配的 Prompt 文件。
+4.  **Execute**: AI 沉浸式扮演 Prompt 中的角色（如“物理导师”或“毒舌评论家”），对用户输入进行处理。
 
 ## 来源
 所有 Prompt 原作均来自李继刚老师。
