@@ -1,26 +1,68 @@
 # Lijigang Skills & Prompts Collection
 
-这是一个李继刚提示词（Prompt）的精选集合，已封装为 Skills 格式。
+这是一个李继刚提示词（Prompt）的精选集合，已封装为 OpenCode Skills 格式。
 
 这些 Prompt 涵盖了学习、商业、思维、创作等多个领域，旨在通过高质量的 Prompt 激发 AI 的深度思考与创作能力。
 
-## 使用方法
+## 🚀 极速安装 (Quick Start)
 
-1.  **安装 Skill**: 将本仓库中的 `lijigang_router_skill.md` 添加到您的 Skill 库中。
-2.  **配置路径**: 确保 `lijigang_router_skill.md` 中的 `知识库路径` 指向本仓库所在的文件夹（例如 `/Users/jiuge/lijigang_skills/`）。
-3.  **调用**: 在对话中输入 `/lijigang [您的需求]`。
+在任何已安装 OpenCode 的 MacOS/Linux 电脑上，**复制并运行以下一行命令**，即可完成全部配置：
 
-## 包含的思维模型
+```bash
+# 1. 克隆仓库 -> 2. 安装 Skill -> 3. 自动适配路径
+git clone https://github.com/seasidedog24/lijigang-skills.git ~/lijigang_skills && \
+mkdir -p ~/.opencode/skills && \
+cp ~/lijigang_skills/lijigang_router_skill.md ~/.opencode/skills/lijigang.md && \
+sed -i '' "s|/Users/jiuge/lijigang_skills|${HOME}/lijigang_skills|g" ~/.opencode/skills/lijigang.md && \
+echo "✅ 安装完成！请在 OpenCode 中输入 /lijigang 测试。"
+```
 
-本集合包含 30+ 种思维模型，由 `lijigang-router` 自动调度：
+### 对于 OpenCode AI 的指令：
+如果你是 OpenCode AI，接收到用户请求配置此库时，请直接执行上述 Shell 命令。这将自动把 Skill 注册到你的环境，并下载所有依赖的 Prompt 文件。
 
-*   **核心思维类**: 系统分析、决策高手、人生导师、认知螺旋、进步公式等。
-*   **学科深度解析类**: 数学/物理/化学/生物/地理/历史/语文/英语等学科的第一性原理教学。
-*   **文学与创作类**: 文风侧写、歌词故事、毒舌评论、吵架、文案解构等。
-*   **商业与组织类**: 商业结构、股票分析、会议诊断、OKR 教练、行业研究等。
-*   **学术与信息类**: 论文 X 光机、文章信息图、播客知识萃取等。
+---
+
+## 🛠 使用方法
+
+安装完成后，在 OpenCode 对话框中输入：
+
+> `/lijigang [你的需求]`
+
+**示例**：
+*   `/lijigang 分析一下拼多多的商业模式`
+*   `/lijigang 什么是量子纠缠？`
+*   `/lijigang 把这段话改得更有哲理一点`
+
+## 📦 包含的思维模型 (30+)
+
+本仓库包含以下领域的深度模型，由 Router 自动调度：
+
+### 🧠 深度思考
+*   **System Analysis**: 三维系统解构与演化分析
+*   **Decision Master**: 决策堆栈（本体论/战略/执行/审计）
+*   **Essence Hunter**: 第一性原理本质挖掘
+*   **Cognitive Spiral**: 概念基因重组与升级
+
+### 📚 学科私教
+*   **Principles**: 数学、物理、化学、生物、历史、地理第一性原理
+*   **Language**: 英语词源深度解析、语文文本逆向工程
+
+### 💼 商业与组织
+*   **Business Structure**: 商业模式与组织结构分析
+*   **Stock Analysis**: 价值投资视角分析
+*   **Meeting Diagnosis**: 会议/组织文化诊断
+*   **OKR Coach**: 目标管理深度教练
+
+### 🎨 创作与艺术
+*   **Literary Style**: 文风侧写与模仿
+*   **Lyrics Story**: 歌词情感故事化
+*   **Visual Prompts**: 浮世绘、极简线条、技术插图风格生成
+
+### 🗣️ 沟通与人性
+*   **Life Mentor**: 历史名人沉浸式对话
+*   **Verbal Combat**: 高情商/犀利回击
+*   **Venomous Observer**: 毒舌评论家
 
 ## 来源
-
 所有 Prompt 原作均来自李继刚老师。
-本仓库仅作整理封装，方便使用。
+本仓库仅作整理封装，方便在 OpenCode 环境中自动化调用。
